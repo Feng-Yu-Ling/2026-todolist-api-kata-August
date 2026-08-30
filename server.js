@@ -259,5 +259,5 @@ const requestListener = (req, res) => {
 
 // 當伺服器收到 HTTP Request 時就會執行 requestListener 函式
 const server = http.createServer(requestListener);
-// 伺服器監聽 3005 連接埠
-server.listen(3005);
+// 伺服器監聽的連接埠
+server.listen(process.env.PORT || 3005);
